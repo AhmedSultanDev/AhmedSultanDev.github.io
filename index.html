@@ -27,8 +27,10 @@
 					emailjs.sendForm('contact_service', 'contact_form', this)
 						.then(function() {
 							console.log('SUCCESS!');
+							window.alert("success");
 						}, function(error) {
 							console.log('FAILED...', error);
+							window.alert("fail");
 						});
 				});
 			}
